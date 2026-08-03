@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routes>
+  <vType id="car" vClass="passenger" length="5.0" accel="2.6" decel="4.5" sigma="0.5"/>
+  <vType id="bus" vClass="bus" length="12.0" accel="1.2" decel="4.0" sigma="0.5" color="1,0,0"/>
+  <route id="gtWE" edges="W_C C_E"/>
+  <route id="gtWN" edges="W_C C_N"/>
+  <route id="gtWS" edges="W_C C_S"/>
+  <route id="gtEW" edges="E_C C_W"/>
+  <route id="gtES" edges="E_C C_S"/>
+  <route id="gtEN" edges="E_C C_N"/>
+  <route id="gtNS" edges="N_C C_S"/>
+  <route id="gtNE" edges="N_C C_E"/>
+  <route id="gtNW" edges="N_C C_W"/>
+  <route id="gtSN" edges="S_C C_N"/>
+  <route id="gtSW" edges="S_C C_W"/>
+  <route id="gtSE" edges="S_C C_E"/>
+  <route id="pt1" edges="W_C C_E"/>
+  <route id="pt5" edges="W_C C_N"/>
+  <route id="pt2" edges="E_C C_W"/>
+  <route id="pt6" edges="E_C C_S"/>
+  <route id="pt3" edges="S_C C_N"/>
+  <route id="pt7" edges="S_C C_W"/>
+  <route id="pt4" edges="N_C C_S"/>
+  <route id="pt8" edges="N_C C_E"/>
+  <flow id="f_gtWE" type="car" route="gtWE" departLane="0" begin="0" end="3600" vehsPerHour="1512.0"/>
+  <flow id="f_gtWN" type="car" route="gtWN" departLane="2" begin="0" end="3600" vehsPerHour="432.0"/>
+  <flow id="f_gtWS" type="car" route="gtWS" departLane="0" begin="0" end="3600" vehsPerHour="216.0"/>
+  <flow id="f_gtEW" type="car" route="gtEW" departLane="0" begin="0" end="3600" vehsPerHour="1512.0"/>
+  <flow id="f_gtES" type="car" route="gtES" departLane="2" begin="0" end="3600" vehsPerHour="432.0"/>
+  <flow id="f_gtEN" type="car" route="gtEN" departLane="0" begin="0" end="3600" vehsPerHour="216.0"/>
+  <flow id="f_gtNS" type="car" route="gtNS" departLane="0" begin="0" end="3600" vehsPerHour="756.0"/>
+  <flow id="f_gtNE" type="car" route="gtNE" departLane="1" begin="0" end="3600" vehsPerHour="216.0"/>
+  <flow id="f_gtNW" type="car" route="gtNW" departLane="0" begin="0" end="3600" vehsPerHour="108.0"/>
+  <flow id="f_gtSN" type="car" route="gtSN" departLane="0" begin="0" end="3600" vehsPerHour="756.0"/>
+  <flow id="f_gtSW" type="car" route="gtSW" departLane="1" begin="0" end="3600" vehsPerHour="216.0"/>
+  <flow id="f_gtSE" type="car" route="gtSE" departLane="0" begin="0" end="3600" vehsPerHour="108.0"/>
+  <flow id="f_pt1" type="bus" route="pt1" begin="0" end="3600" period="310">
+    <param key="occupancy" value="40.0"/>
+  </flow>
+  <flow id="f_pt5" type="bus" route="pt5" begin="0" end="3600" period="310">
+    <param key="occupancy" value="40.0"/>
+  </flow>
+  <flow id="f_pt2" type="bus" route="pt2" begin="0" end="3600" period="210">
+    <param key="occupancy" value="40.0"/>
+  </flow>
+  <flow id="f_pt6" type="bus" route="pt6" begin="0" end="3600" period="210">
+    <param key="occupancy" value="40.0"/>
+  </flow>
+  <flow id="f_pt3" type="bus" route="pt3" begin="0" end="3600" period="580">
+    <param key="occupancy" value="40.0"/>
+  </flow>
+  <flow id="f_pt7" type="bus" route="pt7" begin="0" end="3600" period="580">
+    <param key="occupancy" value="40.0"/>
+  </flow>
+  <flow id="f_pt4" type="bus" route="pt4" begin="0" end="3600" period="460">
+    <param key="occupancy" value="40.0"/>
+  </flow>
+  <flow id="f_pt8" type="bus" route="pt8" begin="0" end="3600" period="460">
+    <param key="occupancy" value="40.0"/>
+  </flow>
+</routes>

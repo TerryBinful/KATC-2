@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- NEMA movements with GEOMETRICALLY CORRECT turn destinations.
+     Node layout: N=(0,+120) S=(0,-120) E=(+120,0) W=(-120,0), centre C=(0,0).
+     Correct turns (driver's left = 90deg CCW from travel direction):
+       W_C (eastbound):  through->C_E  left->C_N  right->C_S
+       E_C (westbound):  through->C_W  left->C_S  right->C_N
+       N_C (southbound): through->C_S  left->C_E  right->C_W
+       S_C (northbound): through->C_N  left->C_W  right->C_E
+     SUMO lane 0 = rightmost; highest-index lane = exclusive left. -->
+<connections>
+    <!-- MAJOR West W_C (3 lanes), eastbound -->
+    <connection from="W_C" to="C_E" fromLane="0" toLane="0"/>   <!-- through -->
+    <connection from="W_C" to="C_E" fromLane="1" toLane="1"/>   <!-- through -->
+    <connection from="W_C" to="C_S" fromLane="0" toLane="0"/>   <!-- right -> C_S -->
+    <connection from="W_C" to="C_N" fromLane="2" toLane="0"/>   <!-- LEFT  -> C_N -->
+
+    <!-- MAJOR East E_C (3 lanes), westbound -->
+    <connection from="E_C" to="C_W" fromLane="0" toLane="0"/>
+    <connection from="E_C" to="C_W" fromLane="1" toLane="1"/>
+    <connection from="E_C" to="C_N" fromLane="0" toLane="0"/>   <!-- right -> C_N -->
+    <connection from="E_C" to="C_S" fromLane="2" toLane="0"/>   <!-- LEFT  -> C_S -->
+
+    <!-- MINOR North N_C (2 lanes), southbound -->
+    <connection from="N_C" to="C_S" fromLane="0" toLane="0"/>   <!-- through -->
+    <connection from="N_C" to="C_W" fromLane="0" toLane="0"/>   <!-- right -> C_W -->
+    <connection from="N_C" to="C_E" fromLane="1" toLane="0"/>   <!-- LEFT  -> C_E -->
+
+    <!-- MINOR South S_C (2 lanes), northbound -->
+    <connection from="S_C" to="C_N" fromLane="0" toLane="0"/>   <!-- through -->
+    <connection from="S_C" to="C_E" fromLane="0" toLane="0"/>   <!-- right -> C_E -->
+    <connection from="S_C" to="C_W" fromLane="1" toLane="0"/>   <!-- LEFT  -> C_W -->
+</connections>

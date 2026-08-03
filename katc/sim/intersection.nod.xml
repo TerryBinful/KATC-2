@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- KATC test intersection (Fig. 7): 4-legged, 2-lane major (E-W), 1-lane minor (N-S),
+     exclusive left-turn lanes. Center is the signalised node. -->
+<nodes>
+    <node id="C"  x="0"    y="0"    type="traffic_light" tl="C"/>
+    <!-- Major street = East-West (approaches from W and E) -->
+    <node id="W"  x="-120" y="0"    type="priority"/>
+    <node id="E"  x="120"  y="0"    type="priority"/>
+    <!-- Minor street = North-South (approaches from N and S) -->
+    <node id="N"  x="0"    y="120"  type="priority"/>
+    <node id="S"  x="0"    y="-120" type="priority"/>
+</nodes>

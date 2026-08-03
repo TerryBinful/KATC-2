@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Geometry per paper Fig. 7. Major = 3 lanes (2 through/right + 1 exclusive
+     left), minor = 2 lanes (1 through/right + 1 exclusive left). Lane 0 =
+     rightmost; the highest-index lane is the exclusive left. Per-lane
+     'changeLeft'/'changeRight' = "none" on the boundary keeps through traffic
+     out of the turn lane so movements do not swap. -->
+<edges>
+    <edge id="W_C" from="W" to="C" numLanes="3" speed="15.0" priority="2">
+        <lane index="0"/>
+        <lane index="1" changeLeft="none"/>
+        <lane index="2" changeRight="none"/>
+    </edge>
+    <edge id="C_W" from="C" to="W" numLanes="2" speed="15.0" priority="2"/>
+    <edge id="E_C" from="E" to="C" numLanes="3" speed="15.0" priority="2">
+        <lane index="0"/>
+        <lane index="1" changeLeft="none"/>
+        <lane index="2" changeRight="none"/>
+    </edge>
+    <edge id="C_E" from="C" to="E" numLanes="2" speed="15.0" priority="2"/>
+    <edge id="N_C" from="N" to="C" numLanes="2" speed="15.0" priority="1">
+        <lane index="0" changeLeft="none"/>
+        <lane index="1" changeRight="none"/>
+    </edge>
+    <edge id="C_N" from="C" to="N" numLanes="1" speed="15.0" priority="1"/>
+    <edge id="S_C" from="S" to="C" numLanes="2" speed="15.0" priority="1">
+        <lane index="0" changeLeft="none"/>
+        <lane index="1" changeRight="none"/>
+    </edge>
+    <edge id="C_S" from="C" to="S" numLanes="1" speed="15.0" priority="1"/>
+</edges>
