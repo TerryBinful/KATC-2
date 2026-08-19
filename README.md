@@ -14,13 +14,13 @@ VISSIM; documented as a deviation). Baseline: **Webster fixed-time**
 | Phase | Component | State |
 |-------|-----------|-------|
 | 1 | Kinematic-wave bimodal delay model | **general-traffic delay DONE + tested** |
-| 1 | PT-vehicle delay (Cases A-D) | next |
-| 2 | Genetic algorithm optimizer | pending |
-| 3 | SUMO + TraCI integration | pending |
-| 4 | Baselines (Webster, KATC-1, KATC-2) | pending |
-| 5 | Scenario batch (DOS x PT occupancy) | pending |
-| 6 | Analysis & reproducibility verdict | pending |
-| 7 | Report (3-5 pp) + slides | pending |
+| 1 | PT-vehicle delay (Cases A-D) | Done |
+| 2 | Genetic algorithm optimizer | Done |
+| 3 | SUMO + TraCI integration | Done |
+| 4 | Baselines (Webster, KATC-1, KATC-2) | Done |
+| 5 | Scenario batch (DOS x PT occupancy) | Done |
+| 6 | Analysis & reproducibility verdict | Done |
+| 7 | Report (3-5 pp) + slides | **Done**, prepared and submitted |
 
 ## Layout
 
